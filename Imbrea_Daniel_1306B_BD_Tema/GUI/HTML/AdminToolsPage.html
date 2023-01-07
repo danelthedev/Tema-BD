@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Application Interface</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<H1 id="storeTitle">Mobi Lux Store</H1>
+
+<!-- button on the right side of the screen, same line as header, that says "${username}" -->
+<button class="user-button">${username}
+    <div class="options">
+        <a id="Cart">Cart</a>
+        <a id="Account Information">Account information</a>
+        <a id="Logout">Logout</a>
+        <!-- Admin tools options that is hidden unless the user is an admin -->
+        <a id="Admin Tools" style="display: none">Admin Tools</a>
+    </div>
+</button>
+
+<!-- menu with 3 buttons, "Modify", "Insert", and "Delete" -->
+<div class="menuContainer">
+    <div class="menu">
+        <div>
+            <button id="add-chair" class="adminToolButton">Add chair</button>
+        </div>
+        <div>
+            <button id="add-table" class="adminToolButton">Add table</button>
+        </div>
+        <div>
+            <button id="add-night-stand" class="adminToolButton">Add night stand</button>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div id="productsTable">
+</div>
+
+</body>
+
+</html>

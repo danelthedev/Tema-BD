@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Application Interface</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <!-- Your interface content goes here -->
+
+    <h1 class="title">Mobi Lux Store</h1>
+
+    <!-- Basic login screen, that asks for username and password, fields one below another, centered -->
+    <div id="loginForm">
+        <form onsubmit="return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username">
+
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+
+            <input type="submit" id="submit" value="Login">
+        </form>
+
+        <div id="register">
+            <label for="register">Don't have an account?</label>
+            <button id="registerButton">Register</button>
+        </div>
+
+        <!--Hidden label that says "Invalid username or password"-->
+        <label id="loginError" class="error" style="display: none">Invalid username or password</label>
+
+    </div>
+
+</body>
+
+</html>

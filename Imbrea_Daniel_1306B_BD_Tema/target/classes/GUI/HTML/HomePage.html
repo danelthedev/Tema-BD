@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Application Interface</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<H1 id="storeTitle">Mobi Lux Store</H1>
+
+<!-- button on the right side of the screen, same line as header, that says "${username}" -->
+<button class="user-button">${username}
+    <div class="options">
+        <a id="Cart">Cart</a>
+        <a id="Account Information">Account information</a>
+        <a id="Logout">Logout</a>
+        <!-- Admin tools options that is hidden unless the user is an admin -->
+        <a id="Admin Tools" style="display: none">Admin Tools</a>
+    </div>
+</button>
+
+<div class="menuContainer">
+    <!--Line 1-->
+    <div class="menu">
+        <!-- "Furniture type" element -->
+        <div class="furniture-type">
+            <a href="#" class="furniture-type-label">Furniture type</a>
+            <div id="furniture-type-options">
+                <label for="tables-checkbox">Tables</label>
+                <input type="checkbox" id="tables-checkbox" name="furniture-type" value="tables">
+                <label for="night-stands-checkbox">Night Stands</label>
+                <input type="checkbox" id="night-stands-checkbox" name="furniture-type" value="night-stands">
+                <label for="chairs-checkbox">Chairs</label>
+                <input type="checkbox" id="chairs-checkbox" name="furniture-type" value="chairs">
+            </div>
+        </div>
+        <!-- "Sort by" element -->
+        <div id="sortType" class="sort-by">
+            <select id="sortMethod">
+                <option value="price/asc">Price/Asc</option>
+                <option value="price/desc">Price/Desc</option>
+                <option value="name/asc">Name/Asc</option>
+                <option value="name/desc">Name/Desc</option>
+            </select>
+        </div>
+        <!-- "Search" element -->
+        <div class="search">
+            <input id="searchBar" type="text" placeholder="Search">
+        </div>
+
+        <!-- "Apply filters" button -->
+        <div id="apply-filters">
+            <button id="apply-filters-button">Apply filters</button>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div id="MainContent"></div>
+
+
+</body>
+
+</html>

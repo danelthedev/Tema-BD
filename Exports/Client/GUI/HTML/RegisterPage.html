@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Application Interface</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <!-- Your interface content goes here -->
+
+    <h1 class="title">Mobi Lux Store</h1>
+
+    <!-- Basic login screen, that asks for username and password, fields one below another, centered -->
+    <div id="loginForm">
+        <form onsubmit="return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username">
+
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+
+            <br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+
+
+            <br>
+            <p>Delivery Address:</p>
+
+
+            <label>City:</label>
+            <input id="city" name="city" placeholder="City">
+
+            <br>
+
+            <label>Street:</label>
+            <input id="street" name="street" placeholder="Street">
+
+            <br>
+
+            <label>Zipcode:</label>
+            <input id="zipcode" name="zipcode" placeholder="Zipcode">
+
+            <br>
+
+            <input type="submit" id="submit" value="Register">
+        </form>
+
+        <div id="login">
+            <label for="login">Already have an account?</label>
+            <a href="loginPage.html">
+                <button id="loginButton">Login</button>
+            </a>
+        </div>
+
+        <!--Hidden label that says "Invalid username or password"-->
+        <label id="requiredFieldsError" class="error" style="display: none">Please enter all required fields</label>
+        <label id="phoneError" class="error" style="display: none">Invalid phone number, try another</label>
+        <label id="emailError" class="error" style="display: none">Invalid email, try another</label>
+        <label id="nameError" class="error" style="display: none">Invalid username, try another</label>
+        <label id="passwordError" class="error" style="display: none">Invalid password, try another</label>
+        <label id="zipcodeError" class="error" style="display: none">Invalid zipcode, try another</label>
+
+
+
+    </div>
+
+</body>
+
+</html>
